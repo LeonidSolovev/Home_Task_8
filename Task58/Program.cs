@@ -16,14 +16,14 @@ int[,] resArray = ProdArray(firstArray, secondArray);
 PrintArray(resArray);
 
 
-int[,] ProdArray(int[,] arr1,int[,] arr2)
+int[,] ProdArray(int[,] arr1, int[,] arr2)
 {
     // Не придумал, как сделать циклом((
-    int[,] resArr = new int[arr1.GetLength(0),arr1.GetLength(1)];
-    resArr[0,0] = arr1[0,0]*arr2[0,0] + arr1[0,1]*arr2[1,0];
-    resArr[1,0] = arr1[1,0]*arr2[0,0] + arr1[1,1]*arr2[1,0];
-    resArr[0,1] = arr1[0,0]*arr2[0,1] + arr1[0,1]*arr2[1,1];
-    resArr[1,1] = arr1[1,0]*arr2[0,1] + arr1[1,1]*arr2[1,1];
+    int[,] resArr = new int[arr1.GetLength(0), arr1.GetLength(1)];
+    resArr[0, 0] = arr1[0, 0] * arr2[0, 0] + arr1[0, 1] * arr2[1, 0];
+    resArr[1, 0] = arr1[1, 0] * arr2[0, 0] + arr1[1, 1] * arr2[1, 0];
+    resArr[0, 1] = arr1[0, 0] * arr2[0, 1] + arr1[0, 1] * arr2[1, 1];
+    resArr[1, 1] = arr1[1, 0] * arr2[0, 1] + arr1[1, 1] * arr2[1, 1];
     return resArr;
 }
 
